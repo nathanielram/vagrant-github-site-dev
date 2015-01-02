@@ -1,7 +1,19 @@
 {
   "name": "server",
 
-  "description": "A server of some kind...",
+  "description": "A server",
+
+  "default_attributes": {
+    "rbenv":{
+      "rubies": ["2.1.5"],
+      "global" : "2.1.5",
+      "gems": {
+        "2.1.5" : [
+          {"name":"bundler"}
+        ]
+      }
+    }
+  },
   
   "json_class": "Chef::Role",
 
@@ -11,7 +23,9 @@
     // required by the users cookbook when using chef solo
     "recipe[chef-solo-search]",
     // enable unattended upgrades
-    "recipe[apt::unattended-upgrades]"
+    "recipe[apt::unattended-upgrades]",
+    "ruby_build",
+    "rbenv::system"
   ],
 
   "chef_type": "role",
