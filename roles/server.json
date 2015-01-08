@@ -18,12 +18,6 @@
   "json_class": "Chef::Role",
 
   "run_list": [
-    // required for building from source
-    //"recipe[build-essential]",
-    // required by the users cookbook when using chef solo
-    //"recipe[chef-solo-search]",
-    // enable unattended upgrades
-    //"recipe[apt::unattended-upgrades]",
     "ruby_build",
     "rbenv::system"
   ],
