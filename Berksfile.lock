@@ -1,21 +1,12 @@
 DEPENDENCIES
   apt
-  build-essential
-  chef-solo-search
-  rails_gem_dependencies-tlq
-    git: git://github.com/TalkingQuickly/rails_gem_dependencies-tlq.git
-    revision: f62ff22492dd9a2c31cd856de176c19f0fbe2d73
   rbenv
     git: git://github.com/drogus/chef-rbenv.git
     revision: 02395a99b9f697b57a575609723c3c05f0e5a258
 
 GRAPH
   apt (2.6.1)
-  build-essential (2.1.3)
-  chef-solo-search (0.5.1)
   java (1.29.0)
-  rails_gem_dependencies-tlq (0.0.3)
-    apt (>= 0.0.0)
   rbenv (0.7.3)
     java (> 1.4.0)
     ruby_build (>= 0.0.0)
