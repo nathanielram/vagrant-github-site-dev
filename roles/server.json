@@ -2,8 +2,18 @@
   "name": "server",
 
   "description": "A server",
-
+  
   "default_attributes": {
+    "apt" : {
+      "unattended_upgrades" : {
+        "enable" : true,
+        "allowed_origins" : [
+          "${distro_id} stable",
+          "${distro_id} ${distro_codename}-security"
+        ],
+        "automatic_reboot" : true
+      }
+    },
     "rbenv":{
       "rubies": ["2.1.5"],
       "global" : "2.1.5",
@@ -14,16 +24,20 @@
       }
     }
   },
-  
+
+
   "json_class": "Chef::Role",
 
+
   "run_list": [
-    //"recipe[apt::unattended-upgrades]",
+    "recipe[apt::unattended-upgrades]",
     "ruby_build",
     "rbenv::system"
   ],
 
+
   "chef_type": "role",
 
+  
   "override_attributes": {}
 }
