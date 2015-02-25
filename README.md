@@ -8,7 +8,7 @@ I built this to make it easy to work with Jekyll (a ruby gem) on Windows, which 
 # Prerequisites:
 Installation of VirtualBox & Vagrant 
 
-Vagrant will need to berkshelf & omnibus plugins installed
+Vagrant will need the berkshelf & omnibus plugins installed
 
 ```vagrant plugin install vagrant-omnibus``` 
 ```vagrant plugin install vagrant-berkshelf```
