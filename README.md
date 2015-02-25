@@ -6,7 +6,12 @@ This was built to make it simple to develop with Jekyll for Github Pages.
 I built this to make it easy to work with Jekyll (a ruby gem) on Windows, which is done through the ease of use of Vagrant.
 
 # Prerequisites:
-Installation of VirtualBox & Vagrant
+Installation of VirtualBox & Vagrant 
+
+Vagrant will need to berkshelf & omnibus plugins installed
+
+```vagrant plugin install vagrant-omnibus``` 
+```vagrant plugin install vagrant-berkshelf```
 
 # How to use:
 
